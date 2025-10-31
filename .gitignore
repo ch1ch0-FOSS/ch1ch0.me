@@ -1,3 +1,28 @@
+# Build outputs
+.next/
+dist/
+build/
+out/
+
+# Dependencies
 node_modules/
-node_modules/
-node_modules/
+package-lock.json
+yarn.lock
+
+# Environment files
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+
+# TypeScript
+next-env.d.ts
+*.tsbuildinfo
+
+# OS
+.DS_Store
+
+# Misc
+repo/
