@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react';
 
-// Example hardcoded username, replace with your GitHub username:
 const GITHUB_USER = 'ch1ch0';
 
-const Index = () => {
+const Projects = () => {
   const [repos, setRepos] = useState([]);
   useEffect(() => {
     fetch(`https://api.github.com/users/${GITHUB_USER}/repos?sort=updated`)
       .then(res => res.json())
-      .then(data => setRepos(data.slice(0, 3))); // Show 3 recent
+      .then(data => setRepos(data));
   }, []);
   return (
     <main className="mx-auto p-10 max-w-2xl">
-      <h1 className="font-bold text-4xl mb-4">ch1ch0 Portfolio</h1>
-      <p className="mb-6">Linux Sysadmin & Options Trader. Building digital infrastructure and strategies.</p>
-      <h2 className="font-bold text-2xl mb-2">Featured Projects</h2>
+      <h1 className="font-bold text-3xl mb-4">Projects</h1>
       <ul>
         {repos.map(repo => (
-          <li key={repo.id} className="mb-2">
+          <li key={repo.id} className="mb-4">
             <a href={repo.html_url} className="text-blue-700 underline font-semibold" target="_blank" rel="noopener noreferrer">
               {repo.name}
             </a> — {repo.description || 'No description'}
+            <div>
+              <span>⭐ {repo.stargazers_count} | 🍴 {repo.forks_count}</span>
+            </div>
           </li>
         ))}
       </ul>
@@ -28,5 +28,5 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Projects;
 
