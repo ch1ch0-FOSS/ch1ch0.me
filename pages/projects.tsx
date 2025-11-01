@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const GITHUB_USER = 'ch1ch0';
+const GITHUB_USER = 'ch1ch0-FOSS';
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);
