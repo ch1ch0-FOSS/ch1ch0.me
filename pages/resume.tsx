@@ -86,7 +86,7 @@ const Resume = () => (
       <div className="space-y-4">
         <div className="border-l-4 border-indigo-600 pl-4">
           <h3 className="font-semibold">ch1ch0.me Portfolio Site</h3>
-          <p className="text-sm text-gray-600">Next.js, React, TypeScript, Tailwind CSS | Live: https://www.ch1ch0.me\</p\>
+          <p className="text-sm text-gray-600">Next.js, React, TypeScript, Tailwind CSS | Live: https://www.ch1ch0.me</p>
           <p className="text-sm text-gray-700 mt-1">Professional portfolio showcasing Linux infrastructure expertise with automated deployment pipeline.</p>
         </div>
         <div className="border-l-4 border-indigo-600 pl-4">
@@ -120,8 +120,8 @@ const Resume = () => (
       <h2 className="font-bold text-2xl mb-4 mt-8">Contact & Links</h2>
       <div className="bg-gray-50 p-4 rounded-lg text-sm">
         <p><strong>Email:</strong> ch1ch0@duck.com</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/ch1ch0-FOSS" className="text-indigo-600 underline">https://github.com/ch1ch0-FOSS\</a\>\</p\>
-        <p><strong>Portfolio:</strong> <a href="https://www.ch1ch0.me" className="text-indigo-600 underline">https://www.ch1ch0.me\</a\>\</p\>
+        <p><strong>GitHub:</strong> <a href="https://github.com/ch1ch0-FOSS" className="text-indigo-600 underline">https://github.com/ch1ch0-FOSS</a></p>
+        <p><strong>Portfolio:</strong> <a href="https://www.ch1ch0.me" className="text-indigo-600 underline">https://www.ch1ch0.me</a></p>
       </div>
     </div>
   </main>
