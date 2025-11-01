@@ -19,10 +19,10 @@ const Index = () => {
       {/* Navigation Bar */}
       <nav className="bg-gray-900 text-white py-4 px-8">
         <div className="max-w-4xl mx-auto flex gap-8 items-center">
-          <a href="/" className="hover:text-blue-400">Home</a>
-          <a href="/infrastructure" className="hover:text-blue-400">Infrastructure</a>
-          <a href="/services" className="hover:text-blue-400">Services</a>
-          <a href="https://github.com/ch1ch0-FOSS" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">GitHub</a>
+          <a href="/" className="hover:text-blue-400 mr-6">Home</a>
+          <a href="/infrastructure" className="hover:text-blue-400 mr-6">Infrastructure</a>
+          <a href="/services" className="hover:text-blue-400 mr-6">Services</a>
+          <a href="https://github.com/ch1ch0-FOSS" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 mr-6">GitHub</a>
         </div>
       </nav>
 
