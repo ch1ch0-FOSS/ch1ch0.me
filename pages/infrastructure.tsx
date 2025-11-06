@@ -156,7 +156,7 @@ const styles = {
     marginLeft: '20px',
   },
   footer: {
-    textAlign: "center" as const as const,
+    textAlign: "center" as const as const as const,
     borderTop: '2px solid #333',
     paddingTop: '20px',
     color: '#666',

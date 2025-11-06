@@ -65,7 +65,7 @@ export default function Home() {
           <ul style={styles.list}>
             <li><a href="https://github.com/ch1ch0/ch1ch0-FOSS">ch1ch0-FOSS on GitHub</a> - Portfolio landing</li>
             <li><a href="https://github.com/ch1ch0/srv-m1m-asahi">srv-m1m-asahi on GitHub</a> - Infrastructure proof</li>
-            <li><a href="https://github.com/ch1ch0">GitHub Profile</a></li>
+            <li><a href="https://github.com/ch1ch0.me">GitHub Profile</a></li>
           </ul>
         </section>
       </main>
@@ -87,7 +87,7 @@ const styles = {
     color: '#333',
   },
   header: {
-    textAlign: "center" as const as const,
+    textAlign: "center" as const as const as const,
     marginBottom: '40px',
     borderBottom: '2px solid #333',
     paddingBottom: '20px',
@@ -117,7 +117,7 @@ const styles = {
     fontSize: '16px',
   },
   footer: {
-    textAlign: "center" as const as const,
+    textAlign: "center" as const as const as const,
     borderTop: '2px solid #333',
     paddingTop: '20px',
     color: '#666',
