@@ -87,7 +87,7 @@ const styles = {
     color: '#333',
   },
   header: {
-    textAlign: 'center',
+    textAlign: "center" as const as const,
     marginBottom: '40px',
     borderBottom: '2px solid #333',
     paddingBottom: '20px',
@@ -117,7 +117,7 @@ const styles = {
     fontSize: '16px',
   },
   footer: {
-    textAlign: 'center',
+    textAlign: "center" as const as const,
     borderTop: '2px solid #333',
     paddingTop: '20px',
     color: '#666',
