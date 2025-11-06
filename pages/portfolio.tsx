@@ -1,151 +1,53 @@
-import Link from 'next/link';
+;import Link from "next/link";
 
 export default function Portfolio() {
   return (
-    <div style={styles.container}>
-      <header style={styles.header}>
-        <Link href="/">
-          <a style={styles.backLink}>← Back</a>
-        </Link>
-        <h1>Portfolio</h1>
-        <p style={styles.tagline}>My GitHub Infrastructure Projects</p>
+    <div className="max-w-2xl mx-auto p-6 font-sans text-gray-800">
+      <header className="mb-10 pb-5 border-b-2 border-gray-800">
+        <Link href="/" className="text-blue-600 underline">&larr; Back</Link>
+        <h1 className="text-3xl font-semibold mt-2">Portfolio</h1>
+        <p className="text-lg text-gray-600">GitHub Infrastructure Projects (ch1ch0-FOSS)</p>
       </header>
-
-      <main style={styles.main}>
-        <section style={styles.section}>
-          <h2>ch1ch0-FOSS</h2>
+      <main className="mb-10">
+        <section className="mb-7">
+          <h2 className="text-2xl font-bold">ch1ch0-FOSS</h2>
+          <a href="https://github.com/ch1ch0-FOSS/ch1ch0-FOSS" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">
+            GitHub: ch1ch0-FOSS
+          </a>
           <p>
-            <a href="https://github.com/ch1ch0/ch1ch0-FOSS">GitHub: ch1ch0-FOSS</a>
-          </p>
-          <p>
-            My portfolio landing page. 
-            This repo serves as the hub linking to all my infrastructure work and career transition documentation.
+            Portfolio landing page and hub linking to all infrastructure work and career transition documentation.
           </p>
         </section>
-
-        <section style={styles.section}>
-          <h2>srv-m1m-asahi</h2>
+        <section className="mb-7">
+          <h2 className="text-xl font-bold">srv-m1m-asahi</h2>
+          <a href="https://github.com/ch1ch0-FOSS/srv-m1m-asahi" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">
+            GitHub: srv-m1m-asahi
+          </a>
           <p>
-            <a href="https://github.com/ch1ch0/srv-m1m-asahi">GitHub: srv-m1m-asahi</a>
+            Proof of practice showing Fedora Asahi M1 infrastructure. Complete setup, backup, and disaster recovery.
           </p>
-          <p>
-            <strong>This is my proof of practice.</strong>
-          </p>
-          <p>
-            Complete Fedora Asahi M1 infrastructure. 
-            Shows how I bootstrap a server from scratch, deploy services, maintain backups, and execute disaster recovery.
-          </p>
-          
-          <h3>Directory Structure:</h3>
-          <ul style={styles.list}>
-            <li><strong>00-BOOTSTRAP</strong> - Build Fedora from scratch (reproducible)</li>
-            <li><strong>01-FORGEJO</strong> - Self-hosted Git server deployment</li>
-            <li><strong>02-VAULTWARDEN</strong> - Encrypted password management</li>
-            <li><strong>03-SYNCTHING</strong> - File synchronization setup</li>
-            <li><strong>04-INFRASTRUCTURE</strong> - Monitoring, health checks, automation</li>
-            <li><strong>05-DISASTER-RECOVERY</strong> - Backup strategy + monthly test logs (your selling point)</li>
-          </ul>
-
-          <h3>What You Should Look For:</h3>
-          <ul style={styles.list}>
-            <li>Reproducible bootstrap scripts (can rebuild in 2 hours)</li>
-            <li>Clear service configurations with troubleshooting guides</li>
-            <li>Automated backup scripts (daily snapshots)</li>
-            <li>Monthly disaster recovery test documentation</li>
-            <li>Incident response procedures</li>
+        </section>
+        <section className="mb-7">
+          <h2 className="text-xl font-bold">What You Should Look For</h2>
+          <ul className="ml-5 list-disc">
+            <li>Bootstrap scripts (reproducible in 2 hours)</li>
+            <li>Clear service configs and troubleshooting</li>
+            <li>Automated backup scripts and logs</li>
+            <li>Monthly disaster recovery testing</li>
+            <li>Incident response documentation</li>
           </ul>
         </section>
-
-        <section style={styles.section}>
-          <h2>Why This Portfolio Matters</h2>
-          <p>
-            Most portfolios show side projects. This shows <strong>production infrastructure</strong>.
-          </p>
-          <p>
-            Most developers don't test recovery. I do it monthly and document it.
-          </p>
-          <p>
-            Most sysadmins don't publish their infrastructure. I do, and I invite scrutiny.
-          </p>
-          <p>
-            This is what hiring managers want to see: proof that you take infrastructure seriously.
-          </p>
-        </section>
-
-        <section style={styles.section}>
-          <h2>GitHub Profile</h2>
-          <p>
-            <a href="https://github.com/ch1ch0">ch1ch0 on GitHub</a>
-          </p>
-          <p>
-            See all repositories and contribution history.
-          </p>
-        </section>
-
-        <section style={styles.section}>
-          <h2>Interview Talking Points</h2>
-          <p>
-            When I interview, I bring:
-          </p>
-          <ul style={styles.list}>
-            <li>Live M1 server running (SSH access to show running processes)</li>
-            <li>Backup logs showing last 3 months of automated snapshots</li>
-            <li>Monthly disaster recovery test documentation</li>
-            <li>Ansible playbooks or shell scripts for reproducible deployments</li>
-            <li>Clear explanations of why I chose each tool</li>
-          </ul>
+        <section>
+          <h2 className="text-xl font-bold">See All Repos and Contributions</h2>
+          <a href="https://github.com/ch1ch0-FOSS" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">
+            @ch1ch0-FOSS on GitHub
+          </a>
         </section>
       </main>
-
-      <footer style={styles.footer}>
-        <Link href="/">
-          <a style={styles.backLink}>← Back to Home</a>
-        </Link>
+      <footer className="border-t-2 border-gray-800 pt-5 text-center text-sm text-gray-600">
+        <Link href="/" className="text-blue-600 underline">&larr; Back to Home</Link>
       </footer>
     </div>
   );
 }
 
-const styles = {
-  container: {
-    maxWidth: '800px',
-    margin: '0 auto',
-    padding: '20px',
-    fontFamily: 'system-ui, -apple-system, sans-serif',
-    lineHeight: '1.6',
-    color: '#333',
-  },
-  header: {
-    marginBottom: '40px',
-    borderBottom: '2px solid #333',
-    paddingBottom: '20px',
-  },
-  backLink: {
-    color: '#0066cc',
-    textDecoration: 'none',
-    fontSize: '16px',
-    marginBottom: '10px',
-    display: 'block',
-  },
-  tagline: {
-    fontSize: '18px',
-    color: '#666',
-    marginTop: '10px',
-  },
-  main: {
-    marginBottom: '40px',
-  },
-  section: {
-    marginBottom: '30px',
-  },
-  list: {
-    marginLeft: '20px',
-  },
-  footer: {
-    textAlign: "center" as const as const as const,
-    borderTop: '2px solid #333',
-    paddingTop: '20px',
-    color: '#666',
-    fontSize: '14px',
-  },
-};
